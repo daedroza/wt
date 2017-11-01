@@ -1,0 +1,17 @@
+.text-center{
+	text-align: center;
+}
+
+.hd1{
+	font-size:40px;
+}
+
+.image{
+	max-width: 100%;
+	max-height: auto;
+}
+
+.content{
+	font-size: 20px;
+	color: yellow;
+}
