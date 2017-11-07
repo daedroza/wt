@@ -2,7 +2,7 @@ function validateForm() {
     var x = document.forms["myForm"]["username"].value;
 	var y = document.forms["myForm"]["pass"].value;
 	var z = document.forms["myForm"]["mobileno"].value;
-	var regex = /^(?=.*[a-z])(?=.*[A-Z])$/;
+	var regex = /(?=.*[a-z])(?=.*[A-Z])/;
 	var n = z.length;
     if (x == "") {
         alert("Name must be filled out");
@@ -23,7 +23,7 @@ function validateForm() {
 	}else if((n<10)||(n>10)){
 		alert("Mobile number should be of 10 digits");
 		return false;
-	}else if(y.value.match(regex)){
+	}else if(regex.test(y) == false){
 		alert("The password should contain atleast 1 uppercase and 1 lowercase character");
 		return false;
 	}
